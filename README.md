@@ -15,6 +15,11 @@ This system is developed to manage courses, students, instructors, and enrollmen
 - Payment Management
 - Feedback System
 
+## 📸 Screenshots
+
+### Home Page
+![Home Page](screenshots/home-page.png)
+
 ## 🛠️ Technologies Used
 - Frontend: HTML, CSS, Bootstrap, React.js
 - Backend: PHP (Laravel)
