@@ -1,0 +1,71 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f3f2;
+}
+
+/* Header and Footer */
+header, footer {
+    background-color: #318a31;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+h1, h2 {
+    color: #000000;
+}
+
+/* About Section */
+.about-section, .history-section, .mission-section, .programs-section, .registration-section, .contact-section, .features-section, .user-roles-section {
+    background-color: rgb(231, 230, 236);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(166, 206, 21, 0.1);
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-top: 20px;
+}
+
+/* Paragraphs */
+p {
+    color: #555;
+}
+
+li{
+    color: black;
+
+}
+
+/* Lists */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .about-section, .history-section, .mission-section, .programs-section, .registration-section, .contact-section, .features-section, .user-roles-section {
+        margin: 10px;
+        padding: 15px;
+    }
+}

@@ -1,0 +1,41 @@
+# SkillPro Institute — PHP Web App (Starter)
+
+This is a simple PHP + MySQL starter that matches the **CSE5009 Web Application Development** brief.
+It includes: course browsing & filtering, online registration, inquiries, notices calendar, role-based dashboards (Student / Instructor / Admin), and basic error handling (client + server).
+
+## Quick start (XAMPP / WAMP)
+1. Copy the `skillpro` folder into your web root:
+   - **XAMPP**: `C:/xampp/htdocs/skillpro`
+   - **WAMP**: `C:/wamp64/www/skillpro`
+2. Start Apache and MySQL.
+3. In phpMyAdmin, run the SQL in `init.sql` to create the `skillpro` database and seed data.
+4. Update DB credentials in `db.php` if needed.
+5. Visit: `http://localhost/skillpro/`
+
+### Test accounts
+- **Admin**: admin@skillpro.local / `Admin123`
+- **Instructor**: instructor@skillpro.local / `Admin123`
+- Register a new **Student** from the UI.
+
+## Pages
+- `/index.php` (home, search + featured + notices)
+- `/courses.php` (filter + list)
+- `/course.php?id=...` (details + enroll)
+- `/register.php`, `/login.php`, `/logout.php`
+- `/inquiries.php` (contact form)
+- `/calendar.php` (events/notices)
+
+### Dashboards
+- `/dashboard/student.php` — enrolled courses
+- `/dashboard/instructor.php` — list own courses + enrollment counts
+- `/dashboard/admin.php` — overview
+- `/admin/courses.php` — CRUD for courses
+- `/admin/notices.php` — CRUD for notices
+
+## Notes
+- Uses `password_hash`/`password_verify` and prepared statements.
+- Basic CSS for a clean, modern look. You can replace with Bootstrap/Tailwind if preferred.
+- This is intentionally lightweight so you can extend for Task 02/03 (more validation, error pages, etc.).
+
+---
+Generated on 2025-09-24
